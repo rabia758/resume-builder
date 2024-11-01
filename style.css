@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: rgb(53, 51, 51);
+    background-color: blanchedalmond;
+
+}
+
+/*common style*/
+a{
+    margin-bottom:10px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    padding: 25px;
+}
+
+/*layouts*/
+
+.container{
+    margin-top: 10px;
+    width: 90%;
+    height: 1000px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+/*profile-section*/
+
+.profile-container{
+     background-color:pink;
+     text-align: center;
+     padding: 20px;
+}
+.profile{
+    width: 150px;
+    border-radius: 50%;
+}
+.first{
+   color: purple;
+   font-weight: bold;
+   font-size: 40px;
+   margin-top: 10px;
+
+}
+.second{
+    color: rgb(53,52,52);
+    font-weight: bold;
+    font-size: 40px;
+}
+.profile-tittle{
+    color:black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.btn{
+margin-top: 15px;
+margin-bottom: 10px;
+padding-top: 10px;
+padding: 15px;
+color: rgb(48, 42, 42);
+}
+/*left section*/
+.content{
+    padding-left: 40px;
+    padding: 20px;
+}
+.head{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: purple;
+}
+.p-3{
+    color: rgb(53,52,52);
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.b{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(53,52,52);
+}
+.skills{
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+.skills span{
+    color: rgb(53,52,52);
+}
+.left{
+    width: 35%;
+    float: left;
+}
+.fa-solid{
+    color: purple;
+}
+
+.line{
+    border: 1px solid rgb(53,52,52);
+    height: 600px;
+    margin-top: 10px;
+    float: left;
+}
+@media (max-width: 768px) {
+    .content {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding: 15px; /* Adjust overall padding */
+    }
+    .head {
+        font-size: 18px; /* Slightly smaller font size */
+    }
+    .left,.right {
+        width: 100%; /* Full width on smaller screens */
+        float: none; /* Remove floating */
+    }
+    .skills {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+    .p-3, .b {
+        margin-top: 10px; /* Increase top margin for better spacing */
+    }
+    .a1{
+        font-size: 16px;
+        color: rgb(53,52,52);
+    }
+    .fa-solid{
+        font-size: 24px;
+    }
+    .line {
+        height: 50px; /* Optional: adjust height for smaller screens */
+        width:100%;/* Full width to occupy available space */
+        margin: 10px 0; /* Center the line with top and bottom margin */
+        float: none; /* Remove float for stacking */
+    }
+
+}
+
+/*right section*/
+.right{
+    width: 62%;
+    float: left;
+}
+.a1{
+    color: rgb(53,52,52);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+
+    .btn {
+        padding: 10px 20px; /* Increase padding for button */
+        font-size: 1em; /* Adjust button font size */
+    }
+}
+
+
+button{
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(196, 14, 126);
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: purple;
+}
+
+
+/* Media query for screens 469px wide or smaller */
+@media (max-width: 469px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .left-section {
+        width: 100%;
+        text-align: center; /* Center text for better appearance */
+        padding: 10px;
+        border: none; /* Remove border for cleaner look */
+        background-color: rgb(48, 42, 42);
+    }
+
+    .right-section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .profile-container {
+        height: 80px;
+        width: 80px;
+        border: 3px solid rgb(218, 17, 174);
+        border-radius: 50%;
+        margin-top: 5%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+        margin-top: 5px;
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgb(196, 14, 126);
+    }
+
+    button:hover {
+        background-color: purple;
+    }
+}
+
+
